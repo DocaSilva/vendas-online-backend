@@ -8,7 +8,7 @@ export class CrateTableUser1711210603570 implements MigrationInterface {
         CREATE TABLE \`user\` (
             \`id\` INT(11) NOT NULL AUTO_INCREMENT,
             \`name\` VARCHAR(255) NOT NULL, 
-            \`email\` VARCHAR(255) NOT NULL, 
+            \`email\` VARCHAR(255) NOT NULL UNIQUE, 
             \`phone\` VARCHAR(255) NOT NULL,
             \`cpf\` VARCHAR(255) NOT NULL,
             \`password\` VARCHAR(255) NOT NULL,
